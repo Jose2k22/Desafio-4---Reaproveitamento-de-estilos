@@ -1,0 +1,93 @@
+<head>
+    <title>Aula - 2 - Formulário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <form class="form">
+            <h1 class="title">Faça seu cadastro</h1>
+
+            <div class="box">
+                <Label class="label-field" for="name-field">Nome Completo</Label>
+                <input type="text" placeholder=" Digite seu completo" id="name-field" class="field-input" required />
+            </div>
+
+            <div class="double-box">
+                <div class="box space-between">
+                    <label class="label-field" for="date-field">Data de Nascimento</label>
+                    <input type="date" class="field-input" id="date-field" required />
+                </div>
+
+                <div class="box space-between">
+                    <label class="label-field">Pais</label>
+                    <select class="select">
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Paraguai</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box-genre">
+                <span class="genre-title">Genêro</span>
+                <div class="options-genre">
+
+                    <div class="select-genre">
+                        <input type="radio" name="input-genre" id="female" />
+                        <label for="female">Feminino<label>
+                    </div>
+
+                    <div class="select-genre">
+                        <input type="radio" name="input-genre" id="masculine">
+                        <label for="masculine">Masculino<label>
+                    </div>
+
+                    <div class="select-genre">
+                        <input type="radio" name="input-genre" id="not-declare">
+                        <label for="not-declare">Não declarar</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <label class="label-field" for="email-field">E-mail</label>
+                <input type="text" placeholder="Digite seu E-mail completo" class="field-input" required
+                    id="email-field" />
+            </div>
+
+
+
+            <div class="box">
+                <label class="label-field" for="password">Senha</label>
+                <input type="password" placeholder="Digite sua Senha completa" class="field-input" id="password"
+                    required>
+            </div>
+
+            <div class="box">
+                <label class="label-field" for="confirm-password">Confirmar Senha</label>
+                <input type="password" placeholder="Confirmar sua senha" class="field-input" id="confirm-password"
+                    required />
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" class="checkbox-field" required>
+                <p>Aceito os <a href="#">termos e condições</a> e concordo com as <a href="#">termos e
+                        condições</a>politicas de privacidade do Hall To Code.
+                </p>
+            </div>
+
+
+            <button class="button">Cadastrar</button>
+
+            <p>Já tem uma conta no Hall To Code? <a href="http://127.0.0.1:5500/html/login.html?#">Entre agora</a></p>
+        </form>
+
+    </section>
+
+</body>
